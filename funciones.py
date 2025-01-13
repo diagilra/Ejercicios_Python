@@ -18,6 +18,12 @@ def max_divisor(n):
             maximo_actual = i
     return maximo_actual
 
+# Máximo común divisor con el algoritmo de Euclides
+def calcular_mcd(n1, n2):
+    while n2 != 0:
+        n1, n2 = n2, n1 % n2
+    return abs(n1)
+
 print(maximo_divisor(8))
 print(max_divisor(8))
 
