@@ -94,23 +94,23 @@ while opcion != 0:
     # Mostramos el menu
     opcion = opcion_menu()
 
-    #CÃ³digo para la opciÃ³n 1. Publicar un mensaje.
+    #Código para la opción 1. Publicar un mensaje.
     if opcion == 1:
         mensaje = ingresar_mensaje()
         mostrar_mensaje(nombre, None, mensaje)
 
-    #CÃ³digo para la opciÃ³n 2. Publicar un mensaje a un grupo de personas.
+    #Código para la opción 2. Publicar un mensaje a un grupo de personas.
     elif opcion == 2:
         mensaje = ingresar_mensaje()
         for i in range(num_amigos):
             nombre_amigo = input("Ingresa el nombre de tu amigo o amiga: ")
             mostrar_mensaje(nombre, nombre_amigo, mensaje)
 
-    #CÃ³digo para la opciÃ³n 3. Publicar los datos del perfil del usuario.
+    #Código para la opción 3. Publicar los datos del perfil del usuario.
     elif opcion == 3:
         mostrar_perfil(nombre, edad, estatura_m, estatura_cm, num_amigos, ciudad)
 
-    #CÃ³digo para la opciÃ³n 4. Actualizar los datos del perfil del usuario.
+    #Código para la opción 4. Actualizar los datos del perfil del usuario.
     elif opcion == 4:
         nombre = ingresar_nombre()
         edad = ingresar_edad()
